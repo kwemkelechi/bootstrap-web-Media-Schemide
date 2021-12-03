@@ -18,6 +18,11 @@
     /* Fix of Webkit flickering */
     z-index: 1;
 }
+
+.swipe {
+    position: relative;
+}
+
 .swiper-container-no-flexbox .swiper-slide {
     float: left;
 }
@@ -167,7 +172,10 @@
     background-size: 27px 44px;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgba(169,200,13,0.8);
+    padding: 34px;
 }
+
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
     opacity: 0.35;

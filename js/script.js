@@ -88,8 +88,8 @@ var cardSlider = new Swiper(".card-slider", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    slidesPerView: 3,
-    spaceBetween: 70,
+    slidesPerView: 2,
+    spaceBetween: 50,
     breakpoints: {
         // when window is <= 767px
         767: {
@@ -98,6 +98,38 @@ var cardSlider = new Swiper(".card-slider", {
         // when window is <= 991px
         991: {
         slidesPerView: 2,
+        spaceBetween: 40,
+        },
+    },
+});
+
+var portfolioSlider = new Swiper(".portfolio-slider", {
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 60,
+        slideShadows: false,
+    },
+
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: true,
+    },
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 2,
+    spaceBetween: 20,
+    centeredSlides: true,
+    breakpoints: {
+        // when window is <= 767px
+        767: {
+        slidesPerView: 1,
+        },
+        // when window is <= 991px
+        991: {
+        slidesPerView: 1,
         spaceBetween: 40,
         },
     },
